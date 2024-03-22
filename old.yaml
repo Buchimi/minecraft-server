@@ -3,5 +3,7 @@ services:
     command: bash cmd.bash
     image: openjdk:17
     volumes:
-      - ./:/app
+      - ./server.jar:/app/server.jar
+      - ./cmd.bash:/app/cmd.bash
+    
     working_dir: /app
